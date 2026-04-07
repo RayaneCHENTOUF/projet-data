@@ -1,0 +1,42 @@
+1. Nettoyage et standardisation
+DVF
+Combiner l’adresse complète : adresse_numero + adresse_nom_voie + code_postal
+Calcul du prix au m² : valeur_fonciere / surface_reelle_bati
+Associer les coordonnées GPS : longitude et latitude → permet de placer chaque bien sur la carte
+Normaliser le type de logement : type_local
+Logements sociaux
+Extraire arrondissement : colonne Arrondissement
+Créer indicateur nombre total de logements sociaux par arrondissement
+Convertir coordonnées L93 → lat/lon si nécessaire (geo_point_2d)
+Encadrement des loyers
+Lier quartiers ou arrondissements : Numéro du quartier / Nom du quartier → mapper avec dataset géographie Paris
+Extraire loyer de référence au m²
+Calculer indice d’accessibilité en comparant prix DVF avec loyer plafond
+Adresse Paris / géographie
+Utiliser N_SQ_AD + L_NVOIE + Geometry X Y pour géocoder ou fusionner avec DVF et encadrement des loyers
+Fournit fond cartographique pour cartes choroplèthes ou points
+2. Fusion des datasets
+DVF + Adresse Paris → pour valider géolocalisation et arrondissement
+DVF + Logements sociaux → pour calculer proportion logement social par arrondissement
+DVF + Encadrement des loyers → pour calculer prix réel vs plafond loyer, indicateur accessibilité financière
+
+💡 Clé de fusion : adresse + code postal ou coordonnées GPS
+
+3. KPIs principaux à calculer
+KPI	Colonnes utilisées	Source
+Prix au m² médian par arrondissement	valeur_fonciere / surface_reelle_bati, nom_commune	DVF
+Répartition types de logements	type_local, nombre_pieces_principales	DVF
+Part du logement social	Nombre total de logements financés, Arrondissement	Logements sociaux
+Évolution prix / loyers dans le temps	date_mutation, prix m², Loyers de référence	DVF + Encadrement loyers
+Accessibilité financière	Prix m² / plafond loyer, revenus si dispo	DVF + Encadrement loyers
+Indicateurs fusionnés (tes 4 KPI créatifs)	Combinaison des 3 datasets + indicateurs externes	DVF + Logements sociaux + Loyers + éventuellement socio-éco
+4. Pipeline ETL proposé
+Ingestion : DVF, logements sociaux, encadrement des loyers, adresse Paris
+Nettoyage : harmoniser adresses, supprimer doublons, convertir coordonnées
+Enrichissement : associer arrondissement/IRIS, calcul prix m², filtrer types de logement
+Fusion : créer table unique avec tous les indicateurs
+Stockage : Bronze (brut), Silver (nettoyé), Gold (KPIs prêts pour le dashboard)
+Exposition : API filtrable (arrondissement, période, type de logement)
+Dashboard : carte interactive, timeline, comparatif, graphiques KPI
+
+Si tu veux, je peux te faire un schéma visuel clair montrant comment chaque dataset alimente quels KPIs et à quel niveau du pipeline, ça te servira de plan pour coder directement.
