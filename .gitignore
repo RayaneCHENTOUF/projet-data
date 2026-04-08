@@ -1,5 +1,6 @@
 .env
-.pdf
-.csv
+*.pdf
+*.csv
 .venv/
 csv/
+output/
