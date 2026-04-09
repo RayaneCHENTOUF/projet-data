@@ -57,7 +57,15 @@ def compute_kpi():
         df = df.merge(dm, on='c_qu', how='left').fillna({'i_mob': 0})
     else:
         df['i_mob'] = 0
-
+    # 6. Joindre les coordonnes GPS depuis la couche BRONZE
+    from config import BRONZE_DIR
+    if os.path.exists(BRONZE_DIR / 'quartiers.parquet'):
+        dq = pd.read_parquet(BRONZE_DIR / 'quartiers.parquet')
+        dq['c_qu'] = dq['c_qu'].astype(str)
+        if 'geometry x y' in dq.columns:
+            dq = dq[['c_qu', 'geometry x y']].rename(columns={'geometry x y': 'coordonnees_gps'})
+            df = df.merge(dq, on='c_qu', how='left')
+            
     # Prcaution surface
     df['surface_m2'] = df['surface_m2'].replace(0, np.nan).fillna(1_000_000)
 
