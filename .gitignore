@@ -1,6 +1,4 @@
-.env
-*.pdf
+
 *.csv
-.venv/
-csv/
-output/
+data/
+__pycache__/
