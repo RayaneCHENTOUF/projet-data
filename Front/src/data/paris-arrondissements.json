@@ -1,0 +1,425 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "1er",
+        "name": "1er arrondissement",
+        "population": 17521,
+        "area": 2.16
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3416, 48.8622],
+            [2.3476, 48.8622],
+            [2.3488, 48.8584],
+            [2.3450, 48.8584],
+            [2.3416, 48.8622]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "2e",
+        "name": "2e arrondissement",
+        "population": 20873,
+        "area": 3.67
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3475, 48.8635],
+            [2.3580, 48.8635],
+            [2.3590, 48.8575],
+            [2.3475, 48.8575],
+            [2.3475, 48.8635]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "3e",
+        "name": "3e arrondissement",
+        "population": 35010,
+        "area": 4.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3580, 48.8635],
+            [2.3700, 48.8635],
+            [2.3710, 48.8550],
+            [2.3580, 48.8550],
+            [2.3580, 48.8635]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "4e",
+        "name": "4e arrondissement",
+        "population": 27848,
+        "area": 2.25
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3500, 48.8550],
+            [2.3710, 48.8550],
+            [2.3720, 48.8480],
+            [2.3500, 48.8480],
+            [2.3500, 48.8550]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "5e",
+        "name": "5e arrondissement",
+        "population": 61798,
+        "area": 6.43
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3350, 48.8500],
+            [2.3550, 48.8500],
+            [2.3560, 48.8360],
+            [2.3350, 48.8360],
+            [2.3350, 48.8500]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "6e",
+        "name": "6e arrondissement",
+        "population": 41503,
+        "area": 6.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3250, 48.8500],
+            [2.3350, 48.8500],
+            [2.3360, 48.8320],
+            [2.3250, 48.8320],
+            [2.3250, 48.8500]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "7e",
+        "name": "7e arrondissement",
+        "population": 57050,
+        "area": 10.59
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3100, 48.8550],
+            [2.3250, 48.8550],
+            [2.3260, 48.8300],
+            [2.3100, 48.8300],
+            [2.3100, 48.8550]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "8e",
+        "name": "8e arrondissement",
+        "population": 37726,
+        "area": 7.80
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3100, 48.8680],
+            [2.3350, 48.8680],
+            [2.3360, 48.8550],
+            [2.3100, 48.8550],
+            [2.3100, 48.8680]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "9e",
+        "name": "9e arrondissement",
+        "population": 57258,
+        "area": 6.39
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3250, 48.8750],
+            [2.3450, 48.8750],
+            [2.3460, 48.8680],
+            [2.3250, 48.8680],
+            [2.3250, 48.8750]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "10e",
+        "name": "10e arrondissement",
+        "population": 86160,
+        "area": 4.71
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3450, 48.8750],
+            [2.3700, 48.8750],
+            [2.3710, 48.8680],
+            [2.3450, 48.8680],
+            [2.3450, 48.8750]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "11e",
+        "name": "11e arrondissement",
+        "population": 149102,
+        "area": 7.23
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3600, 48.8650],
+            [2.3900, 48.8650],
+            [2.3910, 48.8480],
+            [2.3600, 48.8480],
+            [2.3600, 48.8650]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "12e",
+        "name": "12e arrondissement",
+        "population": 130605,
+        "area": 16.31
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3800, 48.8500],
+            [2.4200, 48.8500],
+            [2.4210, 48.8250],
+            [2.3800, 48.8250],
+            [2.3800, 48.8500]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "13e",
+        "name": "13e arrondissement",
+        "population": 182082,
+        "area": 14.59
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3550, 48.8300],
+            [2.3800, 48.8300],
+            [2.3810, 48.8050],
+            [2.3550, 48.8050],
+            [2.3550, 48.8300]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "14e",
+        "name": "14e arrondissement",
+        "population": 136056,
+        "area": 13.60
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3250, 48.8300],
+            [2.3550, 48.8300],
+            [2.3560, 48.8000],
+            [2.3250, 48.8000],
+            [2.3250, 48.8300]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "15e",
+        "name": "15e arrondissement",
+        "population": 229080,
+        "area": 29.92
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.2800, 48.8400],
+            [2.3250, 48.8400],
+            [2.3260, 48.8000],
+            [2.2800, 48.8000],
+            [2.2800, 48.8400]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "16e",
+        "name": "16e arrondissement",
+        "population": 165409,
+        "area": 27.02
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.2600, 48.8600],
+            [2.3100, 48.8600],
+            [2.3110, 48.8250],
+            [2.2600, 48.8250],
+            [2.2600, 48.8600]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "17e",
+        "name": "17e arrondissement",
+        "population": 168425,
+        "area": 16.74
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.2600, 48.8850],
+            [2.3100, 48.8850],
+            [2.3110, 48.8600],
+            [2.2600, 48.8600],
+            [2.2600, 48.8850]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "18e",
+        "name": "18e arrondissement",
+        "population": 190844,
+        "area": 12.27
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.2800, 48.8950],
+            [2.3400, 48.8950],
+            [2.3410, 48.8750],
+            [2.2800, 48.8750],
+            [2.2800, 48.8950]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "19e",
+        "name": "19e arrondissement",
+        "population": 190020,
+        "area": 18.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3400, 48.8950],
+            [2.4000, 48.8950],
+            [2.4010, 48.8700],
+            [2.3400, 48.8700],
+            [2.3400, 48.8950]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "arrondissement": "20e",
+        "name": "20e arrondissement",
+        "population": 197227,
+        "area": 14.99
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [2.3900, 48.8700],
+            [2.4200, 48.8700],
+            [2.4210, 48.8450],
+            [2.3900, 48.8450],
+            [2.3900, 48.8700]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "arrondissement": "1er",
+        "nom": "1er arrondissement",
+        "population": 17521,
+        "area": 2.16,
+        "prix_m2": 12500,
+        "logements_sociaux": 1205,
+        "taux_logements_sociaux": 8.2,
+        "delinquance": 45,
+        "gares": 3,
+        "loyer_reference_1p": 950,
+        "prix_transaction_median": 850000,
+        "densité": 8101
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3416, 48.8622], [2.3476, 48.8622], [2.3488, 48.8584], [2.3450, 48.8584], [2.3416, 48.8622]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "arrondissement": "2e",
+        "nom": "2e arrondissement",
+        "population": 20873,
+        "area": 3.67,
+        "prix_m2": 11800,
+        "logements_sociaux": 1450,
+        "taux_logements_sociaux": 7.9,
+        "delinquance": 52,
+        "gares": 2,
+        "loyer_reference_1p": 920,
+        "prix_transaction_median": 820000,
+        "densité": 5690
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3475, 48.8635], [2.3580, 48.8635], [2.3590, 48.8575], [2.3475, 48.8575], [2.3475, 48.8635]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "arrondissement": "3e",
+        "nom": "3e arrondissement",
+        "population": 35010,
+        "area": 4.25,
+        "prix_m2": 10900,
+        "logements_sociaux": 2315,
+        "taux_logements_sociaux": 9.1,
+        "delinquance": 68,
+        "gares": 4,
+        "loyer_reference_1p": 880,
+        "prix_transaction_median": 750000,
+        "densité": 8237
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3580, 48.8635], [2.3700, 48.8635], [2.3710, 48.8550], [2.3580, 48.8550], [2.3580, 48.8635]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "arrondissement": "4e",
+        "nom": "4e arrondissement",
+        "population": 27848,
+        "area": 2.25,
+        "prix_m2": 11200,
+        "logements_sociaux": 1850,
+        "taux_logements_sociaux": 8.5,
+        "delinquance": 71,
+        "gares": 3,
+        "loyer_reference_1p": 900,
+        "prix_transaction_median": 780000,
+        "densité": 12377
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3500, 48.8550], [2.3710, 48.8550], [2.3720, 48.8480], [2.3500, 48.8480], [2.3500, 48.8550]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "arrondissement": "5e",
+        "nom": "5e arrondissement",
+        "population": 61798,
+        "area": 6.43,
+        "prix_m2": 9800,
+        "logements_sociaux": 3950,
+        "taux_logements_sociaux": 11.2,
+        "delinquance": 95,
+        "gares": 5,
+        "loyer_reference_1p": 750,
+        "prix_transaction_median": 680000,
+        "densité": 9608
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3350, 48.8500], [2.3550, 48.8500], [2.3560, 48.8360], [2.3350, 48.8360], [2.3350, 48.8500]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "arrondissement": "6e",
+        "nom": "6e arrondissement",
+        "population": 41503,
+        "area": 6.15,
+        "prix_m2": 10500,
+        "logements_sociaux": 2680,
+        "taux_logements_sociaux": 10.1,
+        "delinquance": 58,
+        "gares": 4,
+        "loyer_reference_1p": 810,
+        "prix_transaction_median": 720000,
+        "densité": 6748
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3250, 48.8500], [2.3350, 48.8500], [2.3360, 48.8320], [2.3250, 48.8320], [2.3250, 48.8500]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "arrondissement": "7e",
+        "nom": "7e arrondissement",
+        "population": 57050,
+        "area": 10.59,
+        "prix_m2": 13200,
+        "logements_sociaux": 3850,
+        "taux_logements_sociaux": 10.3,
+        "delinquance": 42,
+        "gares": 6,
+        "loyer_reference_1p": 1050,
+        "prix_transaction_median": 890000,
+        "densité": 5385
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3100, 48.8550], [2.3250, 48.8550], [2.3260, 48.8300], [2.3100, 48.8300], [2.3100, 48.8550]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "arrondissement": "8e",
+        "nom": "8e arrondissement",
+        "population": 37726,
+        "area": 7.80,
+        "prix_m2": 14800,
+        "logements_sociaux": 2250,
+        "taux_logements_sociaux": 7.2,
+        "delinquance": 38,
+        "gares": 4,
+        "loyer_reference_1p": 1200,
+        "prix_transaction_median": 950000,
+        "densité": 4839
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3100, 48.8680], [2.3350, 48.8680], [2.3360, 48.8550], [2.3100, 48.8550], [2.3100, 48.8680]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "properties": {
+        "arrondissement": "9e",
+        "nom": "9e arrondissement",
+        "population": 57258,
+        "area": 6.39,
+        "prix_m2": 10200,
+        "logements_sociaux": 3650,
+        "taux_logements_sociaux": 11.0,
+        "delinquance": 65,
+        "gares": 3,
+        "loyer_reference_1p": 850,
+        "prix_transaction_median": 700000,
+        "densité": 8956
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3250, 48.8750], [2.3450, 48.8750], [2.3460, 48.8680], [2.3250, 48.8680], [2.3250, 48.8750]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "properties": {
+        "arrondissement": "10e",
+        "nom": "10e arrondissement",
+        "population": 86160,
+        "area": 4.71,
+        "prix_m2": 8900,
+        "logements_sociaux": 5240,
+        "taux_logements_sociaux": 14.5,
+        "delinquance": 88,
+        "gares": 5,
+        "loyer_reference_1p": 720,
+        "prix_transaction_median": 620000,
+        "densité": 18289
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3450, 48.8750], [2.3700, 48.8750], [2.3710, 48.8680], [2.3450, 48.8680], [2.3450, 48.8750]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "properties": {
+        "arrondissement": "11e",
+        "nom": "11e arrondissement",
+        "population": 149102,
+        "area": 7.23,
+        "prix_m2": 7800,
+        "logements_sociaux": 7450,
+        "taux_logements_sociaux": 16.2,
+        "delinquance": 125,
+        "gares": 6,
+        "loyer_reference_1p": 650,
+        "prix_transaction_median": 540000,
+        "densité": 20617
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3600, 48.8650], [2.3900, 48.8650], [2.3910, 48.8480], [2.3600, 48.8480], [2.3600, 48.8650]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "properties": {
+        "arrondissement": "12e",
+        "nom": "12e arrondissement",
+        "population": 130605,
+        "area": 16.31,
+        "prix_m2": 6200,
+        "logements_sociaux": 8950,
+        "taux_logements_sociaux": 18.5,
+        "delinquance": 110,
+        "gares": 4,
+        "loyer_reference_1p": 580,
+        "prix_transaction_median": 480000,
+        "densité": 8007
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3800, 48.8500], [2.4200, 48.8500], [2.4210, 48.8250], [2.3800, 48.8250], [2.3800, 48.8500]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "properties": {
+        "arrondissement": "13e",
+        "nom": "13e arrondissement",
+        "population": 182082,
+        "area": 14.59,
+        "prix_m2": 5800,
+        "logements_sociaux": 10200,
+        "taux_logements_sociaux": 19.2,
+        "delinquance": 98,
+        "gares": 5,
+        "loyer_reference_1p": 550,
+        "prix_transaction_median": 450000,
+        "densité": 12483
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3550, 48.8300], [2.3800, 48.8300], [2.3810, 48.8050], [2.3550, 48.8050], [2.3550, 48.8300]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "properties": {
+        "arrondissement": "14e",
+        "nom": "14e arrondissement",
+        "population": 136056,
+        "area": 13.60,
+        "prix_m2": 6500,
+        "logements_sociaux": 8520,
+        "taux_logements_sociaux": 17.3,
+        "delinquance": 76,
+        "gares": 4,
+        "loyer_reference_1p": 600,
+        "prix_transaction_median": 500000,
+        "densité": 10004
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3250, 48.8300], [2.3550, 48.8300], [2.3560, 48.8000], [2.3250, 48.8000], [2.3250, 48.8300]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "arrondissement": "15e",
+        "nom": "15e arrondissement",
+        "population": 229080,
+        "area": 29.92,
+        "prix_m2": 7100,
+        "logements_sociaux": 14200,
+        "taux_logements_sociaux": 15.8,
+        "delinquance": 102,
+        "gares": 8,
+        "loyer_reference_1p": 620,
+        "prix_transaction_median": 530000,
+        "densité": 7657
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.2800, 48.8400], [2.3250, 48.8400], [2.3260, 48.8000], [2.2800, 48.8000], [2.2800, 48.8400]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "arrondissement": "16e",
+        "nom": "16e arrondissement",
+        "population": 165409,
+        "area": 27.02,
+        "prix_m2": 11800,
+        "logements_sociaux": 8250,
+        "taux_logements_sociaux": 9.5,
+        "delinquance": 35,
+        "gares": 6,
+        "loyer_reference_1p": 980,
+        "prix_transaction_median": 820000,
+        "densité": 6127
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.2600, 48.8600], [2.3100, 48.8600], [2.3110, 48.8250], [2.2600, 48.8250], [2.2600, 48.8600]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "properties": {
+        "arrondissement": "17e",
+        "nom": "17e arrondissement",
+        "population": 168425,
+        "area": 16.74,
+        "prix_m2": 9500,
+        "logements_sociaux": 8950,
+        "taux_logements_sociaux": 12.8,
+        "delinquance": 58,
+        "gares": 5,
+        "loyer_reference_1p": 780,
+        "prix_transaction_median": 650000,
+        "densité": 10061
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.2600, 48.8850], [2.3100, 48.8850], [2.3110, 48.8600], [2.2600, 48.8600], [2.2600, 48.8850]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "properties": {
+        "arrondissement": "18e",
+        "nom": "18e arrondissement",
+        "population": 190844,
+        "area": 12.27,
+        "prix_m2": 6800,
+        "logements_sociaux": 9600,
+        "taux_logements_sociaux": 15.3,
+        "delinquance": 92,
+        "gares": 5,
+        "loyer_reference_1p": 640,
+        "prix_transaction_median": 520000,
+        "densité": 15563
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.2800, 48.8950], [2.3400, 48.8950], [2.3410, 48.8750], [2.2800, 48.8750], [2.2800, 48.8950]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "properties": {
+        "arrondissement": "19e",
+        "nom": "19e arrondissement",
+        "population": 190020,
+        "area": 18.15,
+        "prix_m2": 5900,
+        "logements_sociaux": 10500,
+        "taux_logements_sociaux": 17.8,
+        "delinquance": 105,
+        "gares": 6,
+        "loyer_reference_1p": 590,
+        "prix_transaction_median": 460000,
+        "densité": 10464
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3400, 48.8950], [2.4000, 48.8950], [2.4010, 48.8700], [2.3400, 48.8700], [2.3400, 48.8950]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "properties": {
+        "arrondissement": "20e",
+        "nom": "20e arrondissement",
+        "population": 197227,
+        "area": 14.99,
+        "prix_m2": 5500,
+        "logements_sociaux": 11200,
+        "taux_logements_sociaux": 19.5,
+        "delinquance": 118,
+        "gares": 4,
+        "loyer_reference_1p": 560,
+        "prix_transaction_median": 440000,
+        "densité": 13156
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.3900, 48.8700], [2.4200, 48.8700], [2.4210, 48.8450], [2.3900, 48.8450], [2.3900, 48.8700]]]
+      }
+    }
+  ]
+}
