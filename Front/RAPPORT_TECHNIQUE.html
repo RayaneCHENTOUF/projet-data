@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport Technique - Paris Urban Explorer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+
+        :root {
+            --primary: #3b82f6;
+            --secondary: #6366f1;
+            --bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --accent: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background: #f8fafc;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; page-break-after: always; }
+            .no-print { display: none; }
+        }
+
+        /* Cover Page */
+        .cover {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 257mm;
+        }
+
+        .cover-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+
+        .logo {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            letter-spacing: -2px;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+
+        .logo span { color: var(--primary); }
+
+        .subtitle {
+            font-size: 24px;
+            color: var(--text-light);
+            font-weight: 300;
+            margin-bottom: 60px;
+        }
+
+        .report-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 700;
+            color: var(--primary);
+            border-top: 2px solid var(--primary);
+            padding-top: 20px;
+            display: inline-block;
+        }
+
+        .cover-footer {
+            margin-top: auto;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* Content Styles */
+        h1, h2, h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text);
+        }
+
+        h1 { font-size: 32px; margin-bottom: 30px; border-bottom: 4px solid var(--primary); display: inline-block; padding-bottom: 10px; }
+        h2 { font-size: 24px; margin-top: 40px; color: var(--secondary); display: flex; align-items: center; gap: 10px; }
+        h2::before { content: ""; width: 8px; height: 24px; background: var(--secondary); border-radius: 4px; display: inline-block; }
+
+        p { margin-bottom: 15px; text-align: justify; }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+        .card { background: var(--accent); padding: 20px; border-radius: 12px; border-left: 4px solid var(--primary); }
+        .card h4 { margin: 0 0 10px 0; color: var(--primary); text-transform: uppercase; font-size: 12px; letter-spacing: 1px; }
+
+        .tech-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e0e7ff;
+            color: #4338ca;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 4px;
+        }
+
+        code {
+            font-family: 'Consolas', monospace;
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .visual-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #1e293b;
+            border-radius: 12px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-style: italic;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .visual-placeholder::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent 45%, rgba(255,255,255,0.05) 50%, transparent 55%);
+            background-size: 200% 200%;
+            animation: shine 3s infinite linear;
+        }
+
+        @keyframes shine {
+            0% { background-position: -200% -200%; }
+            100% { background-position: 200% 200%; }
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20mm;
+            left: 20mm;
+            right: 20mm;
+            font-size: 10px;
+            color: var(--text-light);
+            border-top: 1px solid #e2e8f0;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: COVER -->
+    <div class="page">
+        <div class="cover-bg"></div>
+        <div class="cover">
+            <div class="logo">PARIS<span>EXPLORER</span></div>
+            <div class="subtitle">Urban Intelligence Dashboard</div>
+            <div class="report-title">Dossier de Conception Technique</div>
+            
+            <div class="cover-footer">
+                <p><strong>Version :</strong> 1.2.0</p>
+                <p><strong>Date :</strong> 27 Avril 2026</p>
+                <p><strong>Auteur :</strong> Antigravity AI Engineering</p>
+            </div>
+        </div>
+        <div class="footer">
+            <span>© 2026 Paris Urban Explorer</span>
+            <span>Confidentiel</span>
+        </div>
+    </div>
+
+    <!-- PAGE 2: INTRODUCTION & STACK -->
+    <div class="page">
+        <h1>Introduction</h1>
+        <p>
+            Le projet <strong>Paris Urban Explorer</strong> est une plateforme de visualisation de données géospatiales conçue pour explorer les 80 quartiers administratifs de Paris. L'objectif est de fournir une interface immersive, performante et esthétiquement premium pour l'analyse des KPIs de confort urbain.
+        </p>
+
+        <h2>Stack Technique</h2>
+        <p>Le choix de la stack a été guidé par des impératifs de fluidité cartographique et de modularité.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h4>Frontend Core</h4>
+                <div class="tech-tag">React 18</div>
+                <div class="tech-tag">TypeScript</div>
+                <div class="tech-tag">ViteJS</div>
+                <p style="font-size: 11px; margin-top:10px;">Garantit une réactivité optimale et une gestion rigoureuse des types pour les données GeoJSON complexes.</p>
+            </div>
+            <div class="card">
+                <h4>Cartographie</h4>
+                <div class="tech-tag">MapLibre GL</div>
+                <div class="tech-tag">React-Map-GL</div>
+                <p style="font-size: 11px; margin-top:10px;">Utilisation de moteurs vectoriels haute performance permettant un rendu 60fps, même avec des milliers de polygones.</p>
+            </div>
+            <div class="card">
+                <h4>Stylisation</h4>
+                <div class="tech-tag">Tailwind CSS</div>
+                <div class="tech-tag">Lucide React</div>
+                <p style="font-size: 11px; margin-top:10px;">Design système utilitaire pour un contrôle précis des micro-animations et du thème sombre (Slate palette).</p>
+            </div>
+            <div class="card">
+                <h4>Data Pipeline</h4>
+                <div class="tech-tag">Overpass API</div>
+                <div class="tech-tag">GeoJSON</div>
+                <p style="font-size: 11px; margin-top:10px;">Récupération dynamique des adresses via OpenStreetMap et structuration spatiale native.</p>
+            </div>
+        </div>
+
+        <h2>Architecture de l'Interface</h2>
+        <p>L'interface est segmentée en trois zones distinctes mais interconnectées par un état global réactif.</p>
+        
+        <h3>1. Le Moteur Cartographique</h3>
+        <p>
+            Basé sur <code>MapLibre GL</code>, il utilise un fond de carte customisé via <em>OpenFreeMap</em> (Dark Style). Les quartiers sont injectés via une <code>Source</code> GeoJSON, avec des calques (Layers) pour le remplissage, les bordures et les états de survol (hover).
+        </p>
+        
+        <div class="visual-placeholder">
+            [Aperçu : Rendu Vectoriel des 80 Quartiers - Thème Sombre]
+        </div>
+
+        <div class="footer">
+            <span>Paris Urban Explorer - Rapport Technique</span>
+            <span>Page 2</span>
+        </div>
+    </div>
+
+    <!-- PAGE 3: DESIGN & UX -->
+    <div class="page">
+        <h1>Conception UX & Design</h1>
+        
+        <h2>La Barre Supérieure (Top Bar)</h2>
+        <p>
+            Introduite dans la version 1.2, cette zone concentre les informations <strong>morphologiques</strong> du quartier sélectionné. 
+        </p>
+        <ul>
+            <li><strong>Design :</strong> Glassmorphism (flou d'arrière-plan de 10px).</li>
+            <li><strong>Données :</strong> Superficie (ha) et Périmètre (km).</li>
+            <li><strong>Interaction :</strong> Apparition fluide uniquement lors de la sélection d'un quartier sur la carte.</li>
+        </ul>
+
+        <h2>La Sidebar de Données (KPI)</h2>
+        <p>
+            La sidebar est l'élément central de l'analyse métier. Elle a été épurée pour se concentrer sur les indicateurs de performance.
+        </p>
+        <div class="card" style="background: #0f172a; border-left: 4px solid #3b82f6;">
+            <h4 style="color: white;">Structure de la Sidebar</h4>
+            <ul style="color: #cbd5e1; font-size: 13px;">
+                <li><strong>Entête :</strong> Identité du quartier et bouton de fermeture.</li>
+                <li><strong>Zone KPI :</strong> Cards arrondissement et placeholders "Confort Urbain" pour l'intégration API Gold.</li>
+                <li><strong>Exploration Adresses :</strong> Liste scrollable (custom-scrollbar) des adresses récupérées en temps réel via Overpass API.</li>
+            </ul>
+        </div>
+
+        <h2>Hiérarchie Visuelle</h2>
+        <p>
+            Le choix de la palette <code>Slate</code> (Ardoise) permet de faire ressortir les couleurs vives des quartiers (codées par arrondissement) sans fatiguer l'utilisateur. Les contrastes sont calculés pour respecter les normes d'accessibilité WCAG.
+        </p>
+
+        <div class="visual-placeholder">
+            [Aperçu : Sidebar KPI & Top Bar Glassmorphism]
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>
+            L'interface actuelle constitue une fondation solide, prête pour la phase de "Data Binding" finale. La séparation claire entre les informations spatiales (Top Bar) et analytiques (Sidebar) garantit une scalabilité maximale du dashboard.
+        </p>
+
+        <div class="footer">
+            <span>Paris Urban Explorer - Rapport Technique</span>
+            <span>Page 3</span>
+        </div>
+    </div>
+
+    <div class="no-print" style="position: fixed; bottom: 20px; right: 20px; background: var(--primary); color: white; padding: 15px 25px; border-radius: 50px; cursor: pointer; font-weight: bold; box-shadow: 0 10px 25px rgba(59,130,246,0.4);" onclick="window.print()">
+        Imprimer / Sauvegarder en PDF
+    </div>
+
+</body>
+</html>
