@@ -1,10 +1,11 @@
 import { X, Search, MapPin, Building2, Trophy, Filter, Navigation, Shield, Banknote, Home, Building, Scale, Leaf } from 'lucide-react'
 import { useMemo, useState, useEffect } from 'react'
 import { KPI_CATEGORIES, KPICategory, Address, fetchQuartierAddresses } from '../../services/apiService'
+import type { SelectedQuartier } from '../../App'
 import parisData from '../../data/paris-quartiers.json'
 
 interface SidebarProps {
-  selectedQuartier: any
+  selectedQuartier: SelectedQuartier | null
   selectedArrondissement: number | null
   selectedCategories: KPICategory[]
   viewMode: 'quartier' | 'arrondissement'
@@ -60,11 +61,12 @@ export default function Sidebar({
 
   // ─── Quartiers List ────────────────────────────────────────────────
   const allQuartiers = useMemo(() => {
-    const list = (parisData as any).features.map((f: any) => f.properties.l_qu)
-    return list.sort((a: string, b: string) => a.localeCompare(b, 'fr'))
+    const geoData = parisData as unknown as { features: { properties: { l_qu: string } }[] }
+    const list = geoData.features.map(f => f.properties.l_qu)
+    return list.sort((a, b) => a.localeCompare(b, 'fr'))
   }, [])
 
-  const filteredQuartiers = allQuartiers.filter((q: string) =>
+  const filteredQuartiers = allQuartiers.filter(q =>
     q.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
@@ -96,10 +98,10 @@ export default function Sidebar({
       {/* Tabs */}
       {!selectedQuartier && (
         <div className="flex px-4 pt-4 gap-2">
-          {[
-            { id: 'list', icon: Building2, label: 'Quartiers' },
-            { id: 'arr', icon: Trophy, label: 'Classement' },
-          ].map((tab: any) => (
+          {([
+            { id: 'list' as const, icon: Building2, label: 'Quartiers' },
+            { id: 'arr' as const, icon: Trophy, label: 'Classement' },
+          ]).map(tab => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}

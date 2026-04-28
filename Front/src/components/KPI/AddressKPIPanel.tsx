@@ -1,17 +1,26 @@
 import { X, MapPin } from 'lucide-react'
-import { OverpassAddress } from '@/services/overpassApi'
-import { kpiService } from '@/services/kpiService'
+import type { OverpassAddress } from '@/services/overpassApi'
+import type { QuartierKPIResponse, KPICategory } from '@/services/apiService'
 import KPIDisplay from './KPIDisplay'
+import type { SelectedQuartier } from '@/App'
 
 interface AddressKPIPanelProps {
   address: OverpassAddress
   quartierName: string
+  quartier: SelectedQuartier
+  kpiData: QuartierKPIResponse | null
+  selectedCategories: KPICategory[]
   onClose: () => void
 }
 
-export default function AddressKPIPanel({ address, quartierName, onClose }: AddressKPIPanelProps) {
-  const kpis = kpiService.getQuartierKPIs(quartierName)
-
+export default function AddressKPIPanel({
+  address,
+  quartierName,
+  quartier,
+  kpiData,
+  selectedCategories,
+  onClose
+}: AddressKPIPanelProps) {
   return (
     <div className="absolute bottom-0 right-0 top-0 w-96 bg-slate-950 border-l border-slate-800 shadow-2xl z-30 flex flex-col pointer-events-auto overflow-hidden">
       {/* Header */}
@@ -35,10 +44,11 @@ export default function AddressKPIPanel({ address, quartierName, onClose }: Addr
       {/* Content */}
       <div className="flex-1 overflow-y-auto custom-scrollbar px-6 py-6">
         <KPIDisplay
-          quartierName={quartierName}
-          confortUrbain={kpis.confortUrbain}
-          surete={kpis.surete}
-          prixM2={kpis.prixM2}
+          quartier={quartier}
+          kpiData={kpiData}
+          selectedCategories={selectedCategories}
+          isLoading={false}
+          onClose={onClose}
         />
       </div>
 
