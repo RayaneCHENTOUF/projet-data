@@ -98,6 +98,12 @@ export default function Sidebar({
       const streetResults: { type: 'Rue'; name: string; full: string; arr: number }[] = []
       for (const [arr, rues] of Object.entries(RUES_PAR_ARRONDISSEMENT)) {
         const arrNum = parseInt(arr)
+        
+        // Si un arrondissement est sélectionné, on ne cherche que dans celui-ci
+        if (selectedArrondissement && arrNum !== selectedArrondissement) {
+          continue;
+        }
+
         rues.forEach(rue => {
           if (rue.toLowerCase().includes(q)) {
             streetResults.push({
@@ -114,7 +120,7 @@ export default function Sidebar({
     }, 300)
 
     return () => clearTimeout(timer)
-  }, [searchTerm, allQuartiers])
+  }, [searchTerm, allQuartiers, selectedArrondissement])
 
   // ─── Arrondissements ──────────────────────────────────────────────
   const arrondissements = Array.from({ length: 20 }, (_, i) => i + 1)
